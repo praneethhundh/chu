@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Area of Circle</title>
+</head>
+<body>
+  <h2>Calculate Area of a Circle</h2>
+  <label for="radius">Enter Radius: </label>
+  <input type="number" id="radius" />
+  <button onclick="calculateArea()">Calculate Area</button>
+  <p id="result"></p>
+
+  <script>
+    function calculateArea() {
+      const PI = Math.PI;
+      const radius = document.getElementById("radius").value;
+      const area = PI * radius * radius;
+      document.getElementById("result").innerText = `Area of circle: ${area.toFixed(2)} sq units`;
+    }
+  </script>
+</body>
+</html>

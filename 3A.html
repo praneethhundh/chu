@@ -1,0 +1,37 @@
+<html><h2>Customer Details Form</h2>
+<body>
+<form>
+  <label for="name">Full Name:</label>
+  <input type="text" id="name" name="name" required><br><br>
+
+  <label for="email">Email Address:</label>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="dob">Date of Birth:</label>
+  <input type="date" id="dob" name="dob"><br><br>
+
+  <label for="favColor">Favorite Color:</label>
+  <input type="color" id="favColor" name="favColor"><br><br>
+
+  <label for="category">Choose Category:</label>
+  <select id="category" name="category">
+    <option value="electronics">Electronics</option>
+    <option value="fashion">Fashion</option>
+    <option value="books">Books</option>
+    <option value="groceries">Groceries</option>
+  </select><br><br>
+
+  <label for="browser">Choose your browser:</label>
+  <input list="browsers" id="browser" name="browser">
+  <datalist id="browsers">
+    <option value="Chrome">
+    <option value="Firefox">
+    <option value="Safari">
+    <option value="Edge">
+    <option value="Opera">
+  </datalist><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
